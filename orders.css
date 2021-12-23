@@ -43,7 +43,7 @@ body {
   position: absolute !important;
   top: 90px !important;
   left: -20px !important;
-  width: 350px;
+  width: 425px;
   /* z-index: 1; */
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 #imgOne {
-  width: 300px;
+  width: 370px;
 }
 
 .price {
@@ -68,8 +68,9 @@ p {
 
 button#reset {
   font-size: 30px;
-  margin-left: 110px;
-  margin-top: 50px;
+  margin-left: 125px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #total {
@@ -90,6 +91,7 @@ button#reset {
   font-size: 60px;
   margin: 0;
   margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 .plate {
@@ -102,13 +104,22 @@ button#reset {
 .rightside {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
 }
 
 #buynowbtn{
-width: 50%;
 text-align: center;
 font-size: 60px;
 }
+#buynow{
+  margin-left:40px;
+}
+#price{
+  margin-left: 30px;
+}
 
 
+@media only screen and (max-width: 1550px) {
+  .image {
+    width: 125px;
+  }
+}
