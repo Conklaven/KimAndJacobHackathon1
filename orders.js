@@ -109,7 +109,7 @@ buyNow.addEventListener("click",buyNowAlert)
 function buyNowAlert(){
     let totalPrice = (document.getElementById("actualPrice")).textContent
     if (confirm(`Your total comes to $${totalPrice}. Please confirm.`)) {
-        console.log("ok")
+        window.location.href = "thankYouPage.html";
       } else {
         console.log("cancel")
       }
