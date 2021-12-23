@@ -39,8 +39,6 @@ function getToppings() {
         let name = toppings[i].name
         let img = toppings[i].image
         let price = (toppings[i].price).toFixed(2)
-        console.log(price)
-        console.log(typeof price)
         let newDiv = document.createElement("div")
         let image = document.createElement("img")
         newDiv.classList.add("image")
@@ -58,7 +56,6 @@ function getToppings() {
         let toppingPrice = document.createElement("p")
         toppingPrice.setAttribute("value", price)
         let amount = document.createTextNode(`$${price}`)
-        console.log(typeof amount)
         toppingPrice.setAttribute("id", `img${name}cost`)
         text.appendChild(title)
         toppingPrice.appendChild(amount)
@@ -95,7 +92,6 @@ function dropping(e) {
     draggedItem.classList.add("saladafter");
     let toppingCost = document.getElementById(`${draggedItem.id}cost`)
     let valueOfTopping = toppingCost.getAttribute("value");
-    console.log(valueOfTopping)
     pizzaPrice.textContent = ((parseFloat(pizzaPrice.textContent)) + (parseFloat(valueOfTopping))).toFixed(2);
     let p = draggedItem.id
     let label = document.getElementById(`label${p}`)
@@ -111,7 +107,6 @@ function resetPizza() {
 }
 
 let buyNow = document.getElementById("buynowbtn")
-console.log(buyNow)
 buyNow.addEventListener("click",buyNowAlert)
 
 function buyNowAlert(){
