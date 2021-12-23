@@ -162,7 +162,9 @@ img{
     height: 50px;
     width: 100%;
     background-color: #dc6b29;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav > .nav-header {
