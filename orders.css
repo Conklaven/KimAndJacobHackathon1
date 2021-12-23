@@ -37,7 +37,7 @@ body {
 
 .after {
   position: absolute !important;
-  top: -30px !important;
+  top: 90px !important;
   left: -20px !important;
   width: 350px;
   /* z-index: 1; */
@@ -64,4 +64,20 @@ button#reset {
 #total {
   margin-top: 40px;
   font-size: 40px;
+}
+
+.toppingtitle{
+  text-align: center;
+  width: 50%;
+  float: right;
+  right: 50px;
+  font-size: 60px;
+}
+.pizzaTitle{
+  width: 50%;
+  float: left;
+  right: 50px;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 50px;
 }
