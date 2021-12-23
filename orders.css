@@ -1,0 +1,125 @@
+body {
+  background-color: #fdfdfd;
+  margin: 100px;
+}
+
+.orderpage {
+  margin-left: 175px;
+  margin-right: 175px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+}
+
+.image {
+  width: 200px;
+}
+
+.toppings {
+  display: flex;
+  flex-wrap: wrap;
+  right: 0;
+  top: 0;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.pizza {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.after {
+  position: absolute !important;
+  top: 90px !important;
+  left: -20px !important;
+  width: 425px;
+  /* z-index: 1; */
+}
+
+.saladafter {
+  position: absolute !important;
+  right: 20px;
+  top: 150px;
+  width: 350px;
+}
+
+#imgOne {
+  width: 370px;
+}
+
+.price {
+  width: 30%;
+}
+
+p {
+  text-align: center;
+}
+
+button#reset {
+  font-size: 30px;
+  margin-left: 125px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#total {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.toppingtitle {
+  text-align: center;
+  float: right;
+  right: 50px;
+  font-size: 60px;
+}
+
+.pizzaTitle {
+  float: left;
+  right: 50px;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.plate {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+}
+
+.rightside {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#buynowbtn{
+text-align: center;
+font-size: 60px;
+}
+#buynow{
+  margin-left:40px;
+}
+#price{
+  margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 1550px) {
+  .image {
+    width: 125px;
+  }
+}
