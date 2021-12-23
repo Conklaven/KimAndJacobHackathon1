@@ -107,3 +107,11 @@ reset.addEventListener("click", resetPizza)
 function resetPizza() {
     window.location.reload();
 }
+let buyNow = document.getElementById("buynowbtn")
+console.log(buyNow)
+buyNow.addEventListener("click",buyNowAlert)
+
+function buyNowAlert(){
+    let totalPrice = (document.getElementById("actualPrice")).textContent
+    confirm(`Your total comes to $${totalPrice}. Please confirm.`)
+}

@@ -7,7 +7,6 @@ body {
   margin: 175px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 
 .parent {
@@ -104,6 +103,16 @@ button#reset {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
 }
+#price{
+  text-align: center;
+}
+#buynowbtn{
+width: 50%;
+margin: 50px;
+text-align: center;
+font-size: 60px;
+}
+
 
 @media only screen and (max-width: 1490px) {
   .after {
