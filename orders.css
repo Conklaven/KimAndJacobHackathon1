@@ -1,11 +1,15 @@
 body {
-  background-color: whitesmoke;
+  background-color: #fdfdfd;
   /* margin: 100px; */
 }
 
-.orderpage{
+.orderpage {
   margin: 175px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
+
 .parent {
   position: relative;
   top: 0;
@@ -14,9 +18,10 @@ body {
   float: left;
 }
 
-.image{
+.image {
   width: 200px;
 }
+
 .toppings {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +30,6 @@ body {
   justify-content: space-around;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width:50%
 }
 
 .pizza {
@@ -41,6 +45,13 @@ body {
   left: -20px !important;
   width: 350px;
   /* z-index: 1; */
+}
+
+.saladafter {
+  position: absolute !important;
+  right: 20px;
+  top: 150px;
+  width: 350px;
 }
 
 #imgOne {
@@ -66,18 +77,52 @@ button#reset {
   font-size: 40px;
 }
 
-.toppingtitle{
+.toppingtitle {
   text-align: center;
-  width: 50%;
   float: right;
   right: 50px;
   font-size: 60px;
 }
-.pizzaTitle{
-  width: 50%;
+
+.pizzaTitle {
   float: left;
   right: 50px;
   font-size: 60px;
   margin: 0;
   margin-bottom: 50px;
+}
+
+.plate {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+}
+
+.rightside {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+@media only screen and (max-width: 1490px) {
+  .after {
+    position: absolute !important;
+    top: 170px !important;
+    left: -25px !important;
+    width: 350px;
+    /* z-index: 1; */
+    
+  }
+
+  .image {
+    width:100px;
+  }
+
+  .saladafter {
+    position: absolute !important;
+    right: 20px;
+    top: 215px;
+    width: 350px;
+  }
 }
