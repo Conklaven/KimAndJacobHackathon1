@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,93 +12,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-<div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-        <div class="nav-title">
-            <a href="#"> Pizza KK</a>
-        </div>
-    </div>
-    <div class="nav-btn">
-        <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </div>
-    <div class="nav-links">
-        <a href="#about">About Us</a>
-        <a href="#menu">Our Menu</a>
-        <a href="orders.html">Order Pizza</a>
-        <a href="salad.html">Order Salad</a>
-        <a href="#Contactus">Contact us</a>
-    </div>
-</div>
-<div class = "about-img">
-    <img src = "assets/doubleKpizza.jpg" alt ="profile image">
-</div>
-<!--about-->
-<section id="about" class="about-section">
-    <div class ="about-wrapper">
-        <div class = "about">
-            <h2>About us</h2>
-            <h3>The best pizza in the world!</h3>
-            <img src = "assets/chef.png" alt ="profile image" class="chef-img"/>
-            <h1>Hi! <span>&#128075;&#127996;</span></h1>
-            <h2>Are you hungry?</h2>
-            <div class = "about-btns">
-                <a href="orders.html"><button type = "button" class = "btn">Order now!</button></a>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="#"> Pizza KK</a>
             </div>
         </div>
-    </div>
-</section>
-
-
-<section id="menu" class="menu-section">
-    <h1>Our menu</h1>
-    <div class="wrapper-menu">
-        <a href="orders.html"><div class="right-box">
-            <h1>Build your pizza</h1>
-            <img src="assets/5pizza.png" style="max-width: 400px">
-        </div></a>
-        <div class="center-box">
-            <h1>Pasta</h1>
-            <img src="assets/pasta4.png" style="max-width: 400px">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-        <a href="salad.html"><div class="left-box">
-            <h1>Salad</h1>
-            <img src="assets/salad1.png" style="max-width: 400px">
-        </div></a>
+        <div class="nav-links">
+            <a href="#about">About Us</a>
+            <a href="#menu">Our Menu</a>
+            <a href="orders.html">Order Pizza</a>
+            <a href="salad.html">Order Salad</a>
+            <a href="#Contactus">Contact us</a>
+        </div>
     </div>
-</section>
-<section id="Contactus" class="Contactus-section">
-    <div class="wrapper-Contactus">
-        <section id="contact">
-            <div class="contact-form-wrapper">
-                <h2>Contact Us</h2>
-                <form>
-                    <div class="form-item">
-                        <input type="text" name="sender" required>
-                        <label class="form-label">Name:</label>
-                    </div>
-                    <div class="form-item">
-                        <input type="text" name="email" required>
-                        <label class="form-label">Email:</label>
-                    </div>
-                    <div class="form-item">
-                        <textarea class="" name="message" required></textarea>
-                        <label class="form-label">Message:</label>
-                    </div>
-                    <button class="submit-btn" onclick="alert()">Send</button>
-                </form>
+    <div class="about-img">
+        <img src="assets/doubleKpizza.jpg" alt="profile image">
+    </div>
+    <!--about-->
+    <section id="about" class="about-section">
+        <div class="about-wrapper">
+            <div class="about">
+                <h2>About us</h2>
+                <h3>The best pizza in the world!</h3>
+                <img src="assets/chef.png" alt="profile image" class="chef-img" />
+                <h1>Hi! <span>&#128075;&#127996;</span></h1>
+                <h2>Are you hungry?</h2>
+                <div class="about-btns">
+                    <a href="orders.html"><button type="button" class="btn">Order now!</button></a>
+                </div>
             </div>
-        </section>
-    </div>
-</section>
-<footer class="">
-    <p>Kaye & Klaven</p>
-</footer>
-<script src="script.js"></script>
+        </div>
+    </section>
+
+
+    <section id="menu" class="menu-section">
+        <h1>Our menu</h1>
+        <div class="wrapper-menu">
+            <a href="orders.html">
+                <div class="right-box">
+                    <h1>Build your pizza</h1>
+                    <img src="assets/5pizza.png" style="max-width: 400px">
+                </div>
+            </a>
+            <div class="center-box">
+                <h1>Pasta</h1>
+                <img src="assets/pasta4.png" style="max-width: 400px">
+            </div>
+            <a href="salad.html">
+                <div class="left-box">
+                    <h1>Salad</h1>
+                    <img src="assets/salad1.png" style="max-width: 400px">
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Contactus" class="Contactus-section">
+        <div class="wrapper-Contactus">
+            <section id="contact">
+                <div class="contact-form-wrapper">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="form-item">
+                            <input type="text" name="sender" required>
+                            <label class="form-label">Name:</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="email" required>
+                            <label class="form-label">Email:</label>
+                        </div>
+                        <div class="form-item">
+                            <textarea class="" name="message" required></textarea>
+                            <label class="form-label">Message:</label>
+                        </div>
+                        <button class="submit-btn" onclick="alert()">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="">
+        <p>Kaye & Klaven</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
