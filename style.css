@@ -29,13 +29,12 @@ a {
 
 /*footer*/
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: #dc6b29;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 /*menu*/
@@ -111,7 +110,6 @@ img {
     justify-content: center;
     text-align: center;
     color: black;
-    padding: 4rem 4rem 5rem 3rem;
     border-radius: 12px;
     width: 100%;
 }
