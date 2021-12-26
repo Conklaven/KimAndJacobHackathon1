@@ -1,7 +1,7 @@
 let restore = document.body.innerHTML
 
 let toppings = [{
-        "name": "olives",
+        "name": "Olives",
         "image": "https://pizza-crunch.co.il/wp-content/plugins/pizzatime/images/black-olives.png",
         "price": 1.00
     },
