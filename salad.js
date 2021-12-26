@@ -107,13 +107,13 @@ function resetPizza() {
 }
 
 let buyNow = document.getElementById("buynowbtn")
-buyNow.addEventListener("click",buyNowAlert)
+buyNow.addEventListener("click", buyNowAlert)
 
-function buyNowAlert(){
+function buyNowAlert() {
     let totalPrice = (document.getElementById("actualPrice")).textContent
     if (confirm(`Your total comes to $${totalPrice}. Please confirm.`)) {
         window.location.href = "thankYouPage.html";
-      } else {
+    } else {
         console.log("cancel")
-      }
+    }
 }
