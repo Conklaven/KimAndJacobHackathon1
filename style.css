@@ -41,7 +41,7 @@ footer {
 .wrapper-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     padding: 4rem;
     justify-items: center;
