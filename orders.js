@@ -105,7 +105,7 @@ function resetPizza() {
     window.location.reload();
 }
 let buyNow = document.getElementById("buynowbtn")
-buyNow.addEventListener("click", function() {
+buyNow.addEventListener("click", function () {
     let totalPrice = (document.getElementById("actualPrice")).textContent
 
     let code = prompt("if you have a coupon code... please enter it now")
@@ -114,17 +114,12 @@ buyNow.addEventListener("click", function() {
         totalPrice = (totalPrice * .80).toFixed(2);
         if (confirm(`YOU SAVED! Your new total comes to $${totalPrice}. Please confirm.`)) {
             window.location.href = "thankYouPage.html";
-        } else {
-            console.log("cancel")
         }
-    } else if(confirm(`Sorry that is not a valid Coupon Code. Your total comes to $${totalPrice}. Please confirm.`)) {
+    } else if (confirm(`Sorry that is not a valid Coupon Code. Your total comes to $${totalPrice}. Please confirm.`)) {
         window.location.href = "thankYouPage.html";
-    } else {
-        console.log("cancel")
     }
+})
 
-}
-)
 function coupon() {
     setTimeout(function () {
         alert("Order your pizza now and save 20% by using coupon code SAVE20");
