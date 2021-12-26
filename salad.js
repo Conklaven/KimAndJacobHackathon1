@@ -116,7 +116,7 @@ function buyNowAlert() {
     console.log(code)
     if (code == "SAVE20") {
         totalPrice = (totalPrice * .80).toFixed(2);
-        if (confirm(`Your total comes to $${totalPrice}. Please confirm.`)) {
+        if (confirm(`YOU SAVED! Your new total comes to $${totalPrice}. Please confirm.`)) {
             window.location.href = "thankYouPage.html";
         } else {
             console.log("cancel")
