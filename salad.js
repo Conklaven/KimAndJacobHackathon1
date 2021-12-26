@@ -131,7 +131,7 @@ function buyNowAlert() {
 
 function coupon() {
     setTimeout(function () {
-        alert("Order your pizza now and save 20% by using coupon code SAVE20");
+        alert("Order your salad now and save 20% by using coupon code SAVE20");
     }, 5000)
 }
 coupon()
