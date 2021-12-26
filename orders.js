@@ -113,7 +113,7 @@ function buyNowAlert() {
     let code = prompt("if you have a coupon code... please enter it now")
     console.log(code)
     if (code == "SAVE20") {
-        totalPrice = totalPrice * .80;
+        totalPrice = (totalPrice * .80).toFixed(2);
         if (confirm(`Your total comes to $${totalPrice}. Please confirm.`)) {
             window.location.href = "thankYouPage.html";
         } else {

@@ -115,19 +115,20 @@ function buyNowAlert() {
     let code = prompt("if you have a coupon code... please enter it now")
     console.log(code)
     if (code == "SAVE20") {
-        totalPrice = totalPrice * .80;
+        totalPrice = (totalPrice * .80).toFixed(2);
         if (confirm(`Your total comes to $${totalPrice}. Please confirm.`)) {
             window.location.href = "thankYouPage.html";
         } else {
             console.log("cancel")
         }
-    } else if(confirm(`Sorry that is not a valid Coupon Code. Your total comes to $${totalPrice}. Please confirm.`)) {
+    } else if (confirm(`Sorry that is not a valid Coupon Code. Your total comes to $${totalPrice}. Please confirm.`)) {
         window.location.href = "thankYouPage.html";
     } else {
         console.log("cancel")
     }
 
 }
+
 function coupon() {
     setTimeout(function () {
         alert("Order your pizza now and save 20% by using coupon code SAVE20");
