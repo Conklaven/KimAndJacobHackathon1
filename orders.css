@@ -129,6 +129,9 @@ div#toppings {
 p#labelimgLettuce {
   margin-top: 55px;
 }
+#imgLettuce {
+  z-index: -1;
+}
 
 @media only screen and (max-width: 1550px) {
   .image {
