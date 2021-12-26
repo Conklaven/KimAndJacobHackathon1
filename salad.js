@@ -107,9 +107,7 @@ function resetPizza() {
 }
 
 let buyNow = document.getElementById("buynowbtn")
-buyNow.addEventListener("click", buyNowAlert)
-
-function buyNowAlert() {
+buyNow.addEventListener("click", function() {
     let totalPrice = (document.getElementById("actualPrice")).textContent
 
     let code = prompt("if you have a coupon code... please enter it now")
@@ -128,7 +126,7 @@ function buyNowAlert() {
     }
 
 }
-
+)
 function coupon() {
     setTimeout(function () {
         alert("Order your salad now and save 20% by using coupon code SAVE20");
