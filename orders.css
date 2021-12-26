@@ -5,8 +5,8 @@ body {
 }
 
 .orderpage {
-  margin-left: 175px;
-  margin-right: 175px;
+  margin-left: 155px;
+  margin-right: 155px;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -134,11 +134,14 @@ p#labelimgLettuce {
 }
 
 @media only screen and (max-width: 1550px) {
-  .image {
+  /* .image {
     width: 125px;
-  }
+  } */
 
   p#labelimgLettuce {
     margin-top: 35px;
+  }
+  #pizzaTitle , #toppingtitle{
+    font-size: 30px;
   }
 }
